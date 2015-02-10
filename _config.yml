@@ -62,8 +62,8 @@ gems:      []
 
 # Conversion
 markdown:    kramdown
-highlighter: rouge
-
+#highlighter: rouge
+higlighter: pygments
 # lsi:         false ## <-- Disabled on github pages
 
 excerpt_separator: "\n\n"
