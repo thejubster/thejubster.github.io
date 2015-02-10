@@ -72,8 +72,8 @@ markdown:    kramdown
 higlighter: pygments
 # lsi:         false ## <-- Disabled on github pages
 
-excerpt_separator: "\n\n"
-
+#excerpt_separator: "\n\n"
+excerpt_separator: ""   # Workaround for http://blog.slaks.net/2013-08-09/jekyll-tag-was-never-closed
 # Serving
 detach:  false
 port:    4000
@@ -112,7 +112,7 @@ kramdown:
   entity_output:  as_char
   toc_levels:     1..6
   smart_quotes:   lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
+  enable_coderay: true
 
   coderay:
     coderay_wrap:              div
