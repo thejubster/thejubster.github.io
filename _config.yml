@@ -1,7 +1,11 @@
 # Define front matter defaults
 # <http://jekyllrb.com/docs/configuration/#front-matter-defaults>
 
-github_username: "thejubster"
+title: theJubster
+
+description: "Collected stuff from a technically-minded practioner of morosophy.<hr /><br />
+ Undoubtedly existing solely to confirm the wisdom inherent in the adage,
+  \"A little knowledge in the wrong hands can be a dangerous thing\"."
 
 defaults:
 
