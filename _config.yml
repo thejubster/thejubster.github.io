@@ -1,19 +1,21 @@
 # Define front matter defaults
 # <http://jekyllrb.com/docs/configuration/#front-matter-defaults>
 
+github_username: "thejubster"
+
 defaults:
 
-  - 
+  -
     scope:
       path: ""
-      author: "theJubster"  
+      author: "theJubster"
 
   -
     scope:
       path: "posts"
       type: "posts"
     values:
-      layout: "posts"
+      layout: "post"
       category: "posts"
 
   -
@@ -29,7 +31,7 @@ defaults:
       path: "pages"
       type: "pages"
     values:
-      layout: "pages"
+      layout: "page"
       category: "pages"
 
 
