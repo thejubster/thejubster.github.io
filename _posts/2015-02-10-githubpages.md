@@ -1,5 +1,5 @@
 ---
-title: "Gittin' it sort on github"
+title: "Gittin' it sorted on github"
 date:   2015-02-10 18:43:02
 categories: "site"
 layout: post
