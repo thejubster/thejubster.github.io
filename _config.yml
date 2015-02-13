@@ -4,8 +4,15 @@
 title: theJubster
 
 description: "Collected stuff from a technically-minded practioner of morosophy.<hr /><br />
- Undoubtedly existing solely to confirm the wisdom inherent in the adage,
+ Undoubtedly existing solely to confirm the inherent wisdom in the adage,
   \"A little knowledge in the wrong hands can be a dangerous thing\"."
+
+
+github_username: 'thejubster'
+bitbucket_username: 'thejubster'
+twitter_username:
+
+
 
 defaults:
 
@@ -93,19 +100,40 @@ quiet:    false
 defaults: []
 
 # Markdown Processors
-maruku:
-  use_tex:    false
-  use_divs:   false
-  png_engine: blahtex
-  png_dir:    images/latex
-  png_url:    /images/latex
-  fenced_code_blocks: true
-
-rdiscount:
-  extensions: []
 
 redcarpet:
-  extensions: []
+  extensions: [
+
+    #do not parse emphasis inside of words. Strings such as foo_bar_baz will not generate <em> tags
+    "no_intra_emphasis",
+    #parse tables, PHP-Markdown style.
+    "tables",
+    #parse fenced code blocks, PHP-Markdown style. Blocks delimited with 3 or more ~ or backticks will be considered as code, without the need to be indented. An optional language name may be added at the end of the opening fence for the code block.
+    "fenced_code_blocks",
+    #parse links even when they are not enclosed in <> characters. Autolinks for the http, https and ftp protocols will be automatically detected. Email addresses and http links without protocol, but starting with www are also handled.
+    "autolink",
+    #do not parse usual markdown code blocks. Markdown converts text with four spaces at the front of each line to code blocks. This options prevents it from doing so. Recommended to use with fenced_code_blocks: true.
+    "disable_indented_code_blocks",
+    #parse strikethrough, PHP-Markdown style. Two ~ characters mark the start of a strikethrough, e.g. this is ~~good~~ bad.
+    "strikethrough",
+    #HTML blocks do not require to be surrounded by an empty line as in the Markdown standard.
+    "lax_spacing",
+    #A space is always required between the hash at the beginning of a header and its name, e.g. #this is my header would not be a valid header.
+    "space_after_headers",
+    #parse superscripts after the ^ character; contiguous superscripts are nested together, and complex values can be enclosed in parenthesis, e.g. this is the 2^(nd) time.
+    "superscript",
+    #parse underscored emphasis as underlines. This is _underlined_ but this is still *italic*.
+    "underline",
+    #parse highlights. This is ==highlighted==. It looks like this: <mark>highlighted</mark>
+    "highlight",
+    #parse quotes. This is a "quote". It looks like this: <q>quote</q>
+    "quote",
+    #parse footnotes, PHP-Markdown style. A footnote works very much like a reference-style link: it consists of a marker next to the text (e.g. This is a sentence.[^1]) and a footnote definition on its own line anywhere within the document (e.g. [^1]: This is a footnote.).
+    "footnotes"
+
+  ]
+
+
 
 kramdown:
   auto_ids:       true
