@@ -40,3 +40,14 @@ Making mac **.apps** out of shell scripts without all the fuss
 + reveal.js
 + prezi
 + 
+
+### Code Editing
+
++ Atom
++ Geany
++ TextWrangler
++ 
+### Markdown
++ LightPaper
++ Haroopad
++ prism.js
