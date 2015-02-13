@@ -17,3 +17,26 @@ Making mac **.apps** out of shell scripts without all the fuss
 + https://github.com/subtleGradient/Appify-UI
 + https://github.com/maccman/macgap
 + https://github.com/rogerwang/node-webkit
+
+
+### Documentation
+
++ http://kapeli.com/
+
+
+### AI
+
++ hubot
++ 
+
+### Frameworks
+
++ CakePHP
++ Node.js
++ 
+
+### Presenting
+
++ reveal.js
++ prezi
++ 
