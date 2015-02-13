@@ -47,6 +47,7 @@ Making mac **.apps** out of shell scripts without all the fuss
 + Geany
 + TextWrangler
 + 
+
 ### Markdown
 + LightPaper
 + Haroopad
